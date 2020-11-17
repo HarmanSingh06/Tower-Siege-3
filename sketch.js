@@ -147,9 +147,12 @@ function keyPressed(){
   }
 }
 
-function mouseDragged(){
+if(backgroundImg !==null){
+  function mouseDragged(){
   Matter.Body.setPosition(hex.body, {x:mouseX , y:mouseY})
+  }
 }
+
 
 function mouseReleased(){
   sling.fly();
